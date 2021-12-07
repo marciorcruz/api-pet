@@ -21,7 +21,7 @@ const opcoes = {
     tableName: 'fornecedores',
     timestamps: true,
     createdAt: 'dataCriacao',
-    updateAt: 'dataAtualizacao',
+    updatedAt: 'dataAtualizacao',
     version: 'versao'
 }
 module.exports = instancia.define('fornecedor', colunas, opcoes)

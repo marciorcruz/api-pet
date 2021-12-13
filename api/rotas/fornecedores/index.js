@@ -1,8 +1,8 @@
 const roteador = require('express').Router()
-const tabelaFornecedor = require('./tabelaFornecedor')
+const TabelaFornecedor = require('./TabelaFornecedor')
 
 roteador.use('/', async (req, res) => {
-    const resultados = await tabelaFornecedor.listar()
+    const resultados = await TabelaFornecedor.listar()
     res.send(
         JSON.stringify(resultados)
     )

@@ -1,7 +1,7 @@
-const Modelo = require("./modeloTabelaFornecedor")
+const Modelo = require('./ModeloTabelaFornecedor')
 
 module.exports = {
-    listar(){
+    listar () {
         return Modelo.findAll()
     }
 }

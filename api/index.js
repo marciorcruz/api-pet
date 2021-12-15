@@ -5,7 +5,9 @@ const config = require('config')
 
 app.use(bodyParser.json())
 
-const roteador = require('./rotas/fornecedores')
-app.use('/api/fornecedores', roteador)
+const fornecedores = require('./rotas/fornecedores')
+const produtos = require('./rotas/produtos')
+app.use('/api/fornecedores', fornecedores)
+app.use('/api/produtos', produtos)
 
 app.listen(config.get('api.porta'), () => console.log('A API está funcionando'))

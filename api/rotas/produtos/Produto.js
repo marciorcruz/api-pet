@@ -13,6 +13,8 @@ class Produto {
         this.versao = versao
     }
 
+    
+
 }
 
 module.exports = Produto
